@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "D&D Beyond Data Extension",
+  "version": "0.1",
+  "description": "Allows you to expose your personal D&D Beyond content to YOUR_APP.",
+  "incognito": "split",
+  "background": {
+    "scripts": ["jquery.js", "extension.js"],
+    "persistent": false
+  },
+  "externally_connectable": {
+    "matches": ["https://YOUR_DOMAIN.com/*"]
+  },
+  "permissions": [
+    "storage",
+    "https://www.dndbeyond.com/"
+  ]
+}
